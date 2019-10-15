@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
-public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub implements service11.HelloWorld {
+public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub implements service12.HelloWorld {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -16,7 +16,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
     static org.apache.axis.description.OperationDesc [] _operations;
 
     static {
-        _operations = new org.apache.axis.description.OperationDesc[18];
+        _operations = new org.apache.axis.description.OperationDesc[19];
         _initOperationDesc1();
         _initOperationDesc2();
     }
@@ -26,11 +26,11 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         org.apache.axis.description.ParameterDesc param;
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("register");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "member"), service11.Member.class, false, false);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "member"), service12.Member.class, false, false);
         param.setOmittable(true);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "member"));
-        oper.setReturnClass(service11.Member.class);
+        oper.setReturnClass(service12.Member.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -39,7 +39,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("getAllCity");
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "city"));
-        oper.setReturnClass(service11.City[].class);
+        oper.setReturnClass(service12.City[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -50,7 +50,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "city"));
-        oper.setReturnClass(service11.City.class);
+        oper.setReturnClass(service12.City.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -59,7 +59,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("getAllDistrict");
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "district"));
-        oper.setReturnClass(service11.District[].class);
+        oper.setReturnClass(service12.District[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -70,7 +70,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "district"));
-        oper.setReturnClass(service11.District.class);
+        oper.setReturnClass(service12.District.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -79,7 +79,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("getAllPlace");
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place[].class);
+        oper.setReturnClass(service12.Place[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -90,7 +90,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place.class);
+        oper.setReturnClass(service12.Place.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -101,31 +101,28 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "commentDto"));
-        oper.setReturnClass(service11.CommentDto[].class);
+        oper.setReturnClass(service12.CommentDto[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[7] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("createPlace");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "place"), service11.Place.class, false, false);
-        param.setOmittable(true);
-        oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place.class);
+        oper.setName("getPlaceDTO");
+        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "placeDTO"));
+        oper.setReturnClass(service12.PlaceDTO[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[8] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("createRating");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "rating"), service11.Rating.class, false, false);
+        oper.setName("createPlace");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "place"), service12.Place.class, false, false);
         param.setOmittable(true);
         oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "rating"));
-        oper.setReturnClass(service11.Rating.class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
+        oper.setReturnClass(service12.Place.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -137,38 +134,50 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         org.apache.axis.description.OperationDesc oper;
         org.apache.axis.description.ParameterDesc param;
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("getRatingByPlaceId");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
+        oper.setName("createRating");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "rating"), service12.Rating.class, false, false);
+        param.setOmittable(true);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "rating"));
-        oper.setReturnClass(service11.Rating[].class);
+        oper.setReturnClass(service12.Rating.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[10] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("createComment");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "comment"), service11.Comment.class, false, false);
-        param.setOmittable(true);
+        oper.setName("getRatingByPlaceId");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "comment"));
-        oper.setReturnClass(service11.Comment.class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "rating"));
+        oper.setReturnClass(service12.Rating[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[11] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("getCommentByPlaceId");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.setName("createComment");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://example/", "comment"), service12.Comment.class, false, false);
+        param.setOmittable(true);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "comment"));
-        oper.setReturnClass(service11.Comment[].class);
+        oper.setReturnClass(service12.Comment.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[12] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("getCommentByPlaceId");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "comment"));
+        oper.setReturnClass(service12.Comment[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[13] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("login");
@@ -179,33 +188,33 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param.setOmittable(true);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "member"));
-        oper.setReturnClass(service11.Member.class);
-        oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
-        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
-        oper.setUse(org.apache.axis.constants.Use.LITERAL);
-        _operations[13] = oper;
-
-        oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("getPlaceByCityId");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
-        oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place[].class);
+        oper.setReturnClass(service12.Member.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[14] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("getPlaceByDistrictId");
+        oper.setName("getPlaceByCityId");
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place[].class);
+        oper.setReturnClass(service12.Place[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[15] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("getPlaceByDistrictId");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "arg0"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"), long.class, false, false);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
+        oper.setReturnClass(service12.Place[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[16] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("getPlaceByName");
@@ -213,11 +222,11 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         param.setOmittable(true);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://example/", "place"));
-        oper.setReturnClass(service11.Place[].class);
+        oper.setReturnClass(service12.Place[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
-        _operations[16] = oper;
+        _operations[17] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("sayHelloWorldFrom");
@@ -229,7 +238,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
-        _operations[17] = oper;
+        _operations[18] = oper;
 
     }
 
@@ -264,49 +273,56 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
             qName = new javax.xml.namespace.QName("http://example/", "city");
             cachedSerQNames.add(qName);
-            cls = service11.City.class;
+            cls = service12.City.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "comment");
             cachedSerQNames.add(qName);
-            cls = service11.Comment.class;
+            cls = service12.Comment.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "commentDto");
             cachedSerQNames.add(qName);
-            cls = service11.CommentDto.class;
+            cls = service12.CommentDto.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "district");
             cachedSerQNames.add(qName);
-            cls = service11.District.class;
+            cls = service12.District.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "member");
             cachedSerQNames.add(qName);
-            cls = service11.Member.class;
+            cls = service12.Member.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "place");
             cachedSerQNames.add(qName);
-            cls = service11.Place.class;
+            cls = service12.Place.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://example/", "placeDTO");
+            cachedSerQNames.add(qName);
+            cls = service12.PlaceDTO.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://example/", "rating");
             cachedSerQNames.add(qName);
-            cls = service11.Rating.class;
+            cls = service12.Rating.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -377,7 +393,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         }
     }
 
-    public service11.Member register(service11.Member arg0) throws java.rmi.RemoteException {
+    public service12.Member register(service12.Member arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -401,9 +417,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Member) _resp;
+                return (service12.Member) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Member) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Member.class);
+                return (service12.Member) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Member.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -411,7 +427,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.City[] getAllCity() throws java.rmi.RemoteException {
+    public service12.City[] getAllCity() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -435,9 +451,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.City[]) _resp;
+                return (service12.City[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.City[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.City[].class);
+                return (service12.City[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.City[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -445,7 +461,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.City getOneCity(long arg0) throws java.rmi.RemoteException {
+    public service12.City getOneCity(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -469,9 +485,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.City) _resp;
+                return (service12.City) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.City) org.apache.axis.utils.JavaUtils.convert(_resp, service11.City.class);
+                return (service12.City) org.apache.axis.utils.JavaUtils.convert(_resp, service12.City.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -479,7 +495,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.District[] getAllDistrict() throws java.rmi.RemoteException {
+    public service12.District[] getAllDistrict() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -503,9 +519,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.District[]) _resp;
+                return (service12.District[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.District[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.District[].class);
+                return (service12.District[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.District[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -513,7 +529,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.District getOneDistrict(long arg0) throws java.rmi.RemoteException {
+    public service12.District getOneDistrict(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -537,9 +553,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.District) _resp;
+                return (service12.District) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.District) org.apache.axis.utils.JavaUtils.convert(_resp, service11.District.class);
+                return (service12.District) org.apache.axis.utils.JavaUtils.convert(_resp, service12.District.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -547,7 +563,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place[] getAllPlace() throws java.rmi.RemoteException {
+    public service12.Place[] getAllPlace() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -571,9 +587,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place[]) _resp;
+                return (service12.Place[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place[].class);
+                return (service12.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -581,7 +597,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place getDetailPlace(long arg0) throws java.rmi.RemoteException {
+    public service12.Place getDetailPlace(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -605,9 +621,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place) _resp;
+                return (service12.Place) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place.class);
+                return (service12.Place) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -615,7 +631,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.CommentDto[] getCommentRating(long arg0) throws java.rmi.RemoteException {
+    public service12.CommentDto[] getCommentRating(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -639,9 +655,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.CommentDto[]) _resp;
+                return (service12.CommentDto[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.CommentDto[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.CommentDto[].class);
+                return (service12.CommentDto[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.CommentDto[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -649,12 +665,46 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place createPlace(service11.Place arg0) throws java.rmi.RemoteException {
+    public service12.PlaceDTO[] getPlaceDTO() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
         _call.setOperation(_operations[8]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://example/", "getPlaceDTO"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (service12.PlaceDTO[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (service12.PlaceDTO[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.PlaceDTO[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public service12.Place createPlace(service12.Place arg0) throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[9]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -673,9 +723,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place) _resp;
+                return (service12.Place) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place.class);
+                return (service12.Place) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -683,12 +733,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Rating createRating(service11.Rating arg0) throws java.rmi.RemoteException {
+    public service12.Rating createRating(service12.Rating arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[9]);
+        _call.setOperation(_operations[10]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -707,9 +757,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Rating) _resp;
+                return (service12.Rating) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Rating) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Rating.class);
+                return (service12.Rating) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Rating.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -717,12 +767,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Rating[] getRatingByPlaceId(long arg0) throws java.rmi.RemoteException {
+    public service12.Rating[] getRatingByPlaceId(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[10]);
+        _call.setOperation(_operations[11]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -741,9 +791,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Rating[]) _resp;
+                return (service12.Rating[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Rating[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Rating[].class);
+                return (service12.Rating[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Rating[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -751,12 +801,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Comment createComment(service11.Comment arg0) throws java.rmi.RemoteException {
+    public service12.Comment createComment(service12.Comment arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[11]);
+        _call.setOperation(_operations[12]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -775,9 +825,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Comment) _resp;
+                return (service12.Comment) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Comment) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Comment.class);
+                return (service12.Comment) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Comment.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -785,12 +835,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Comment[] getCommentByPlaceId(int arg0) throws java.rmi.RemoteException {
+    public service12.Comment[] getCommentByPlaceId(int arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[12]);
+        _call.setOperation(_operations[13]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -809,9 +859,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Comment[]) _resp;
+                return (service12.Comment[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Comment[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Comment[].class);
+                return (service12.Comment[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Comment[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -819,12 +869,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Member login(java.lang.String arg0, java.lang.String arg1) throws java.rmi.RemoteException {
+    public service12.Member login(java.lang.String arg0, java.lang.String arg1) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[13]);
+        _call.setOperation(_operations[14]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -843,9 +893,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Member) _resp;
+                return (service12.Member) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Member) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Member.class);
+                return (service12.Member) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Member.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -853,12 +903,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place[] getPlaceByCityId(long arg0) throws java.rmi.RemoteException {
+    public service12.Place[] getPlaceByCityId(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[14]);
+        _call.setOperation(_operations[15]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -877,9 +927,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place[]) _resp;
+                return (service12.Place[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place[].class);
+                return (service12.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -887,12 +937,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place[] getPlaceByDistrictId(long arg0) throws java.rmi.RemoteException {
+    public service12.Place[] getPlaceByDistrictId(long arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[15]);
+        _call.setOperation(_operations[16]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -911,9 +961,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place[]) _resp;
+                return (service12.Place[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place[].class);
+                return (service12.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -921,12 +971,12 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
 }
     }
 
-    public service11.Place[] getPlaceByName(java.lang.String arg0) throws java.rmi.RemoteException {
+    public service12.Place[] getPlaceByName(java.lang.String arg0) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[16]);
+        _call.setOperation(_operations[17]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);
@@ -945,9 +995,9 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
         else {
             extractAttachments(_call);
             try {
-                return (service11.Place[]) _resp;
+                return (service12.Place[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (service11.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service11.Place[].class);
+                return (service12.Place[]) org.apache.axis.utils.JavaUtils.convert(_resp, service12.Place[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -960,7 +1010,7 @@ public class HelloWorldPortBindingStub extends org.apache.axis.client.Stub imple
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
-        _call.setOperation(_operations[17]);
+        _call.setOperation(_operations[18]);
         _call.setUseSOAPAction(true);
         _call.setSOAPActionURI("");
         _call.setEncodingStyle(null);

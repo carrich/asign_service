@@ -156,7 +156,7 @@
                 <section class="classic-blog-listing" th:each="iteam : ${list}" th:method="post">
 
                     <h6>
-                        <a href="#!" class="gold-text" >Hanoi</a>
+                        <a href="#!" class="gold-text" th:text="${iteam.city.name}">Hanoi</a>
                         <i class="far fa-clock-o" th:text="${iteam.createdAt}" style="size: 1px;">
                         </i>
                         <br>

@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
-public class HelloWorldServiceLocator extends org.apache.axis.client.Service implements service11.HelloWorldService {
+public class HelloWorldServiceLocator extends org.apache.axis.client.Service implements service12.HelloWorldService {
 
     public HelloWorldServiceLocator() {
     }
@@ -39,7 +39,7 @@ public class HelloWorldServiceLocator extends org.apache.axis.client.Service imp
         HelloWorldPortWSDDServiceName = name;
     }
 
-    public service11.HelloWorld getHelloWorldPort() throws javax.xml.rpc.ServiceException {
+    public service12.HelloWorld getHelloWorldPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(HelloWorldPort_address);
@@ -50,9 +50,9 @@ public class HelloWorldServiceLocator extends org.apache.axis.client.Service imp
         return getHelloWorldPort(endpoint);
     }
 
-    public service11.HelloWorld getHelloWorldPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public service12.HelloWorld getHelloWorldPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            service11.HelloWorldPortBindingStub _stub = new service11.HelloWorldPortBindingStub(portAddress, this);
+            service12.HelloWorldPortBindingStub _stub = new service12.HelloWorldPortBindingStub(portAddress, this);
             _stub.setPortName(getHelloWorldPortWSDDServiceName());
             return _stub;
         }
@@ -72,8 +72,8 @@ public class HelloWorldServiceLocator extends org.apache.axis.client.Service imp
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (service11.HelloWorld.class.isAssignableFrom(serviceEndpointInterface)) {
-                service11.HelloWorldPortBindingStub _stub = new service11.HelloWorldPortBindingStub(new java.net.URL(HelloWorldPort_address), this);
+            if (service12.HelloWorld.class.isAssignableFrom(serviceEndpointInterface)) {
+                service12.HelloWorldPortBindingStub _stub = new service12.HelloWorldPortBindingStub(new java.net.URL(HelloWorldPort_address), this);
                 _stub.setPortName(getHelloWorldPortWSDDServiceName());
                 return _stub;
             }

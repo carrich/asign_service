@@ -1,54 +1,78 @@
 /**
- * Rating.java
+ * Comment.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
-public class Rating  implements java.io.Serializable {
+public class Comment  implements java.io.Serializable {
+    private java.lang.String comment;
+
     private long createdAt;
 
     private long deletedAt;
 
     private long id;
 
-    private service11.Member member;
+    private service12.Member member;
 
     private long pid;
 
-    private service11.Place place;
+    private service12.Place place;
+
+    private int status;
 
     private long updatedAt;
 
-    private int value;
-
-    public Rating() {
+    public Comment() {
     }
 
-    public Rating(
+    public Comment(
+           java.lang.String comment,
            long createdAt,
            long deletedAt,
            long id,
-           service11.Member member,
+           service12.Member member,
            long pid,
-           service11.Place place,
-           long updatedAt,
-           int value) {
+           service12.Place place,
+           int status,
+           long updatedAt) {
+           this.comment = comment;
            this.createdAt = createdAt;
            this.deletedAt = deletedAt;
            this.id = id;
            this.member = member;
            this.pid = pid;
            this.place = place;
+           this.status = status;
            this.updatedAt = updatedAt;
-           this.value = value;
     }
 
 
     /**
-     * Gets the createdAt value for this Rating.
+     * Gets the comment value for this Comment.
+     * 
+     * @return comment
+     */
+    public java.lang.String getComment() {
+        return comment;
+    }
+
+
+    /**
+     * Sets the comment value for this Comment.
+     * 
+     * @param comment
+     */
+    public void setComment(java.lang.String comment) {
+        this.comment = comment;
+    }
+
+
+    /**
+     * Gets the createdAt value for this Comment.
      * 
      * @return createdAt
      */
@@ -58,7 +82,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Sets the createdAt value for this Rating.
+     * Sets the createdAt value for this Comment.
      * 
      * @param createdAt
      */
@@ -68,7 +92,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Gets the deletedAt value for this Rating.
+     * Gets the deletedAt value for this Comment.
      * 
      * @return deletedAt
      */
@@ -78,7 +102,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Sets the deletedAt value for this Rating.
+     * Sets the deletedAt value for this Comment.
      * 
      * @param deletedAt
      */
@@ -88,7 +112,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Gets the id value for this Rating.
+     * Gets the id value for this Comment.
      * 
      * @return id
      */
@@ -98,7 +122,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Sets the id value for this Rating.
+     * Sets the id value for this Comment.
      * 
      * @param id
      */
@@ -108,27 +132,27 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Gets the member value for this Rating.
+     * Gets the member value for this Comment.
      * 
      * @return member
      */
-    public service11.Member getMember() {
+    public service12.Member getMember() {
         return member;
     }
 
 
     /**
-     * Sets the member value for this Rating.
+     * Sets the member value for this Comment.
      * 
      * @param member
      */
-    public void setMember(service11.Member member) {
+    public void setMember(service12.Member member) {
         this.member = member;
     }
 
 
     /**
-     * Gets the pid value for this Rating.
+     * Gets the pid value for this Comment.
      * 
      * @return pid
      */
@@ -138,7 +162,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Sets the pid value for this Rating.
+     * Sets the pid value for this Comment.
      * 
      * @param pid
      */
@@ -148,27 +172,47 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Gets the place value for this Rating.
+     * Gets the place value for this Comment.
      * 
      * @return place
      */
-    public service11.Place getPlace() {
+    public service12.Place getPlace() {
         return place;
     }
 
 
     /**
-     * Sets the place value for this Rating.
+     * Sets the place value for this Comment.
      * 
      * @param place
      */
-    public void setPlace(service11.Place place) {
+    public void setPlace(service12.Place place) {
         this.place = place;
     }
 
 
     /**
-     * Gets the updatedAt value for this Rating.
+     * Gets the status value for this Comment.
+     * 
+     * @return status
+     */
+    public int getStatus() {
+        return status;
+    }
+
+
+    /**
+     * Sets the status value for this Comment.
+     * 
+     * @param status
+     */
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+
+    /**
+     * Gets the updatedAt value for this Comment.
      * 
      * @return updatedAt
      */
@@ -178,7 +222,7 @@ public class Rating  implements java.io.Serializable {
 
 
     /**
-     * Sets the updatedAt value for this Rating.
+     * Sets the updatedAt value for this Comment.
      * 
      * @param updatedAt
      */
@@ -186,30 +230,10 @@ public class Rating  implements java.io.Serializable {
         this.updatedAt = updatedAt;
     }
 
-
-    /**
-     * Gets the value value for this Rating.
-     * 
-     * @return value
-     */
-    public int getValue() {
-        return value;
-    }
-
-
-    /**
-     * Sets the value value for this Rating.
-     * 
-     * @param value
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Rating)) return false;
-        Rating other = (Rating) obj;
+        if (!(obj instanceof Comment)) return false;
+        Comment other = (Comment) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -218,6 +242,9 @@ public class Rating  implements java.io.Serializable {
         __equalsCalc = obj;
         boolean _equals;
         _equals = true && 
+            ((this.comment==null && other.getComment()==null) || 
+             (this.comment!=null &&
+              this.comment.equals(other.getComment()))) &&
             this.createdAt == other.getCreatedAt() &&
             this.deletedAt == other.getDeletedAt() &&
             this.id == other.getId() &&
@@ -228,8 +255,8 @@ public class Rating  implements java.io.Serializable {
             ((this.place==null && other.getPlace()==null) || 
              (this.place!=null &&
               this.place.equals(other.getPlace()))) &&
-            this.updatedAt == other.getUpdatedAt() &&
-            this.value == other.getValue();
+            this.status == other.getStatus() &&
+            this.updatedAt == other.getUpdatedAt();
         __equalsCalc = null;
         return _equals;
     }
@@ -241,6 +268,9 @@ public class Rating  implements java.io.Serializable {
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
+        if (getComment() != null) {
+            _hashCode += getComment().hashCode();
+        }
         _hashCode += new Long(getCreatedAt()).hashCode();
         _hashCode += new Long(getDeletedAt()).hashCode();
         _hashCode += new Long(getId()).hashCode();
@@ -251,19 +281,26 @@ public class Rating  implements java.io.Serializable {
         if (getPlace() != null) {
             _hashCode += getPlace().hashCode();
         }
+        _hashCode += getStatus();
         _hashCode += new Long(getUpdatedAt()).hashCode();
-        _hashCode += getValue();
         __hashCodeCalc = false;
         return _hashCode;
     }
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Rating.class, true);
+        new org.apache.axis.description.TypeDesc(Comment.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "rating"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "comment"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("comment");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "comment"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("createdAt");
         elemField.setXmlName(new javax.xml.namespace.QName("", "createdAt"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
@@ -302,15 +339,15 @@ public class Rating  implements java.io.Serializable {
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("updatedAt");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "updatedAt"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
+        elemField.setFieldName("status");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "status"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("value");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "value"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setFieldName("updatedAt");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "updatedAt"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
     }

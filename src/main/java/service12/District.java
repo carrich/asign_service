@@ -1,13 +1,13 @@
 /**
- * City.java
+ * District.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
-public class City  implements java.io.Serializable {
+public class District  implements java.io.Serializable {
     private long createdAt;
 
     private long deletedAt;
@@ -16,21 +16,21 @@ public class City  implements java.io.Serializable {
 
     private java.lang.String name;
 
-    private service11.Place[] places;
+    private service12.Place[] places;
 
     private int status;
 
     private long updatedAt;
 
-    public City() {
+    public District() {
     }
 
-    public City(
+    public District(
            long createdAt,
            long deletedAt,
            long id,
            java.lang.String name,
-           service11.Place[] places,
+           service12.Place[] places,
            int status,
            long updatedAt) {
            this.createdAt = createdAt;
@@ -44,7 +44,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the createdAt value for this City.
+     * Gets the createdAt value for this District.
      * 
      * @return createdAt
      */
@@ -54,7 +54,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the createdAt value for this City.
+     * Sets the createdAt value for this District.
      * 
      * @param createdAt
      */
@@ -64,7 +64,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the deletedAt value for this City.
+     * Gets the deletedAt value for this District.
      * 
      * @return deletedAt
      */
@@ -74,7 +74,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the deletedAt value for this City.
+     * Sets the deletedAt value for this District.
      * 
      * @param deletedAt
      */
@@ -84,7 +84,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the id value for this City.
+     * Gets the id value for this District.
      * 
      * @return id
      */
@@ -94,7 +94,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the id value for this City.
+     * Sets the id value for this District.
      * 
      * @param id
      */
@@ -104,7 +104,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the name value for this City.
+     * Gets the name value for this District.
      * 
      * @return name
      */
@@ -114,7 +114,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the name value for this City.
+     * Sets the name value for this District.
      * 
      * @param name
      */
@@ -124,35 +124,35 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the places value for this City.
+     * Gets the places value for this District.
      * 
      * @return places
      */
-    public service11.Place[] getPlaces() {
+    public service12.Place[] getPlaces() {
         return places;
     }
 
 
     /**
-     * Sets the places value for this City.
+     * Sets the places value for this District.
      * 
      * @param places
      */
-    public void setPlaces(service11.Place[] places) {
+    public void setPlaces(service12.Place[] places) {
         this.places = places;
     }
 
-    public service11.Place getPlaces(int i) {
+    public service12.Place getPlaces(int i) {
         return this.places[i];
     }
 
-    public void setPlaces(int i, service11.Place _value) {
+    public void setPlaces(int i, service12.Place _value) {
         this.places[i] = _value;
     }
 
 
     /**
-     * Gets the status value for this City.
+     * Gets the status value for this District.
      * 
      * @return status
      */
@@ -162,7 +162,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the status value for this City.
+     * Sets the status value for this District.
      * 
      * @param status
      */
@@ -172,7 +172,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Gets the updatedAt value for this City.
+     * Gets the updatedAt value for this District.
      * 
      * @return updatedAt
      */
@@ -182,7 +182,7 @@ public class City  implements java.io.Serializable {
 
 
     /**
-     * Sets the updatedAt value for this City.
+     * Sets the updatedAt value for this District.
      * 
      * @param updatedAt
      */
@@ -192,8 +192,8 @@ public class City  implements java.io.Serializable {
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof City)) return false;
-        City other = (City) obj;
+        if (!(obj instanceof District)) return false;
+        District other = (District) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -249,10 +249,10 @@ public class City  implements java.io.Serializable {
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(City.class, true);
+        new org.apache.axis.description.TypeDesc(District.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "city"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "district"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("createdAt");
         elemField.setXmlName(new javax.xml.namespace.QName("", "createdAt"));

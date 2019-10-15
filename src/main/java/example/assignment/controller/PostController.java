@@ -5,8 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import service11.*;
+import service12.*;
 
+import javax.servlet.http.HttpSession;
 import javax.xml.rpc.ServiceException;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
@@ -19,11 +20,13 @@ public class PostController {
 
     @Autowired
     HelloWorld helloWorld;
+    @Autowired
+    HttpSession session;
 
     @RequestMapping(method = RequestMethod.GET , value = "/home")
     public String homePage(Model model) throws ServiceException, RemoteException {
-        List<Place> list = new ArrayList<Place>();
-        list =  Arrays.asList(helloWorld.getAllPlace());
+        List<PlaceDTO> list = new ArrayList<PlaceDTO>();
+        list =  Arrays.asList(helloWorld.getPlaceDTO());
         model.addAttribute("list", list);
         return "post/home";
     }
@@ -39,6 +42,7 @@ public class PostController {
     public String getDetail(Model model, @PathVariable("id")long id) throws ServiceException, RemoteException {
         HelloWorldServiceLocator locator = new HelloWorldServiceLocator();
         HelloWorld helloWorld = locator.getHelloWorldPort();
+        session.setAttribute("Post_id",id);
         Place place = helloWorld.getDetailPlace(id);
 
         List<CommentDto> commentDTOList = Arrays.asList(helloWorld.getCommentRating(id));
@@ -50,13 +54,16 @@ public class PostController {
 
     @PostMapping("/saveComment")
     public String  saveComment(Model model, @RequestParam("diem")int diet, @RequestParam("content") String content) throws ServiceException, RemoteException {
+        Long Post_id = (Long) session.getAttribute("Post_id");
+        Member member = (Member) session.getAttribute("currentLoggedIn");
         int diem = diet;
         String noidung = content;
         HelloWorldServiceLocator locator = new HelloWorldServiceLocator();
         HelloWorld helloWorld = locator.getHelloWorldPort();
         Comment comment = new Comment();
         comment.setComment(noidung);
-        comment.setPid(1);
+        comment.setPid(Post_id);
+        comment.setMember(member);
         comment.setId(Calendar.getInstance().getTimeInMillis());
         comment.setCreatedAt(Calendar.getInstance().getTimeInMillis());
         comment.setStatus(1);

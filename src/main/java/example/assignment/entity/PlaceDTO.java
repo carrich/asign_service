@@ -1,8 +1,8 @@
 package example.assignment.entity;
 
-import service11.City;
-import service11.District;
-import service11.Member;
+import service12.City;
+import service12.District;
+import service12.Member;
 
 public class PlaceDTO {
     private City city;

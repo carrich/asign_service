@@ -5,12 +5,12 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
 public class Place  implements java.io.Serializable {
-    private service11.City city;
+    private service12.City city;
 
-    private service11.Comment[] comments;
+    private service12.Comment[] comments;
 
     private long createdAt;
 
@@ -18,19 +18,19 @@ public class Place  implements java.io.Serializable {
 
     private java.lang.String description;
 
-    private service11.District district;
+    private service12.District district;
 
     private long id;
 
     private java.lang.String images;
 
-    private service11.Member member;
+    private service12.Member member;
 
     private java.lang.String name;
 
     private int point;
 
-    private service11.Rating[] ratingList;
+    private service12.Rating[] ratingList;
 
     private int status;
 
@@ -40,18 +40,18 @@ public class Place  implements java.io.Serializable {
     }
 
     public Place(
-           service11.City city,
-           service11.Comment[] comments,
+           service12.City city,
+           service12.Comment[] comments,
            long createdAt,
            long deletedAt,
            java.lang.String description,
-           service11.District district,
+           service12.District district,
            long id,
            java.lang.String images,
-           service11.Member member,
+           service12.Member member,
            java.lang.String name,
            int point,
-           service11.Rating[] ratingList,
+           service12.Rating[] ratingList,
            int status,
            long updatedAt) {
            this.city = city;
@@ -76,7 +76,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @return city
      */
-    public service11.City getCity() {
+    public service12.City getCity() {
         return city;
     }
 
@@ -86,7 +86,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @param city
      */
-    public void setCity(service11.City city) {
+    public void setCity(service12.City city) {
         this.city = city;
     }
 
@@ -96,7 +96,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @return comments
      */
-    public service11.Comment[] getComments() {
+    public service12.Comment[] getComments() {
         return comments;
     }
 
@@ -106,15 +106,15 @@ public class Place  implements java.io.Serializable {
      * 
      * @param comments
      */
-    public void setComments(service11.Comment[] comments) {
+    public void setComments(service12.Comment[] comments) {
         this.comments = comments;
     }
 
-    public service11.Comment getComments(int i) {
+    public service12.Comment getComments(int i) {
         return this.comments[i];
     }
 
-    public void setComments(int i, service11.Comment _value) {
+    public void setComments(int i, service12.Comment _value) {
         this.comments[i] = _value;
     }
 
@@ -184,7 +184,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @return district
      */
-    public service11.District getDistrict() {
+    public service12.District getDistrict() {
         return district;
     }
 
@@ -194,7 +194,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @param district
      */
-    public void setDistrict(service11.District district) {
+    public void setDistrict(service12.District district) {
         this.district = district;
     }
 
@@ -244,7 +244,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @return member
      */
-    public service11.Member getMember() {
+    public service12.Member getMember() {
         return member;
     }
 
@@ -254,7 +254,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @param member
      */
-    public void setMember(service11.Member member) {
+    public void setMember(service12.Member member) {
         this.member = member;
     }
 
@@ -304,7 +304,7 @@ public class Place  implements java.io.Serializable {
      * 
      * @return ratingList
      */
-    public service11.Rating[] getRatingList() {
+    public service12.Rating[] getRatingList() {
         return ratingList;
     }
 
@@ -314,15 +314,15 @@ public class Place  implements java.io.Serializable {
      * 
      * @param ratingList
      */
-    public void setRatingList(service11.Rating[] ratingList) {
+    public void setRatingList(service12.Rating[] ratingList) {
         this.ratingList = ratingList;
     }
 
-    public service11.Rating getRatingList(int i) {
+    public service12.Rating getRatingList(int i) {
         return this.ratingList[i];
     }
 
-    public void setRatingList(int i, service11.Rating _value) {
+    public void setRatingList(int i, service12.Rating _value) {
         this.ratingList[i] = _value;
     }
 

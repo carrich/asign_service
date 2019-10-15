@@ -3,8 +3,8 @@ package example.assignment.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import service11.HelloWorld;
-import service11.HelloWorldServiceLocator;
+import service12.HelloWorld;
+import service12.HelloWorldServiceLocator;
 
 
 import javax.xml.rpc.ServiceException;

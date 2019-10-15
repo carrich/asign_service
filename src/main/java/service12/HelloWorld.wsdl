@@ -52,6 +52,12 @@
 <message name="getCommentRatingResponse">
 <part name="parameters" element="tns:getCommentRatingResponse"/>
 </message>
+<message name="getPlaceDTO">
+<part name="parameters" element="tns:getPlaceDTO"/>
+</message>
+<message name="getPlaceDTOResponse">
+<part name="parameters" element="tns:getPlaceDTOResponse"/>
+</message>
 <message name="createPlace">
 <part name="parameters" element="tns:createPlace"/>
 </message>
@@ -144,6 +150,10 @@
 <operation name="getCommentRating">
 <input wsam:Action="http://example/HelloWorld/getCommentRatingRequest" message="tns:getCommentRating"/>
 <output wsam:Action="http://example/HelloWorld/getCommentRatingResponse" message="tns:getCommentRatingResponse"/>
+</operation>
+<operation name="getPlaceDTO">
+<input wsam:Action="http://example/HelloWorld/getPlaceDTORequest" message="tns:getPlaceDTO"/>
+<output wsam:Action="http://example/HelloWorld/getPlaceDTOResponse" message="tns:getPlaceDTOResponse"/>
 </operation>
 <operation name="createPlace">
 <input wsam:Action="http://example/HelloWorld/createPlaceRequest" message="tns:createPlace"/>
@@ -252,6 +262,15 @@
 </output>
 </operation>
 <operation name="getCommentRating">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="getPlaceDTO">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

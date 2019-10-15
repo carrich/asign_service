@@ -5,10 +5,10 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
 public class Member  implements java.io.Serializable {
-    private service11.Comment[] comments;
+    private service12.Comment[] comments;
 
     private long createdAt;
 
@@ -22,9 +22,9 @@ public class Member  implements java.io.Serializable {
 
     private java.lang.String password;
 
-    private service11.Place[] places;
+    private service12.Place[] places;
 
-    private service11.Rating rating;
+    private service12.Rating rating;
 
     private int role;
 
@@ -38,15 +38,15 @@ public class Member  implements java.io.Serializable {
     }
 
     public Member(
-           service11.Comment[] comments,
+           service12.Comment[] comments,
            long createdAt,
            long deletedAt,
            int gender,
            long id,
            java.lang.String name,
            java.lang.String password,
-           service11.Place[] places,
-           service11.Rating rating,
+           service12.Place[] places,
+           service12.Rating rating,
            int role,
            int status,
            long updatedAt,
@@ -72,7 +72,7 @@ public class Member  implements java.io.Serializable {
      * 
      * @return comments
      */
-    public service11.Comment[] getComments() {
+    public service12.Comment[] getComments() {
         return comments;
     }
 
@@ -82,15 +82,15 @@ public class Member  implements java.io.Serializable {
      * 
      * @param comments
      */
-    public void setComments(service11.Comment[] comments) {
+    public void setComments(service12.Comment[] comments) {
         this.comments = comments;
     }
 
-    public service11.Comment getComments(int i) {
+    public service12.Comment getComments(int i) {
         return this.comments[i];
     }
 
-    public void setComments(int i, service11.Comment _value) {
+    public void setComments(int i, service12.Comment _value) {
         this.comments[i] = _value;
     }
 
@@ -220,7 +220,7 @@ public class Member  implements java.io.Serializable {
      * 
      * @return places
      */
-    public service11.Place[] getPlaces() {
+    public service12.Place[] getPlaces() {
         return places;
     }
 
@@ -230,15 +230,15 @@ public class Member  implements java.io.Serializable {
      * 
      * @param places
      */
-    public void setPlaces(service11.Place[] places) {
+    public void setPlaces(service12.Place[] places) {
         this.places = places;
     }
 
-    public service11.Place getPlaces(int i) {
+    public service12.Place getPlaces(int i) {
         return this.places[i];
     }
 
-    public void setPlaces(int i, service11.Place _value) {
+    public void setPlaces(int i, service12.Place _value) {
         this.places[i] = _value;
     }
 
@@ -248,7 +248,7 @@ public class Member  implements java.io.Serializable {
      * 
      * @return rating
      */
-    public service11.Rating getRating() {
+    public service12.Rating getRating() {
         return rating;
     }
 
@@ -258,7 +258,7 @@ public class Member  implements java.io.Serializable {
      * 
      * @param rating
      */
-    public void setRating(service11.Rating rating) {
+    public void setRating(service12.Rating rating) {
         this.rating = rating;
     }
 

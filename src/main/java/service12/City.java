@@ -1,78 +1,50 @@
 /**
- * Comment.java
+ * City.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
-public class Comment  implements java.io.Serializable {
-    private java.lang.String comment;
-
+public class City  implements java.io.Serializable {
     private long createdAt;
 
     private long deletedAt;
 
     private long id;
 
-    private service11.Member member;
+    private java.lang.String name;
 
-    private long pid;
-
-    private service11.Place place;
+    private service12.Place[] places;
 
     private int status;
 
     private long updatedAt;
 
-    public Comment() {
+    public City() {
     }
 
-    public Comment(
-           java.lang.String comment,
+    public City(
            long createdAt,
            long deletedAt,
            long id,
-           service11.Member member,
-           long pid,
-           service11.Place place,
+           java.lang.String name,
+           service12.Place[] places,
            int status,
            long updatedAt) {
-           this.comment = comment;
            this.createdAt = createdAt;
            this.deletedAt = deletedAt;
            this.id = id;
-           this.member = member;
-           this.pid = pid;
-           this.place = place;
+           this.name = name;
+           this.places = places;
            this.status = status;
            this.updatedAt = updatedAt;
     }
 
 
     /**
-     * Gets the comment value for this Comment.
-     * 
-     * @return comment
-     */
-    public java.lang.String getComment() {
-        return comment;
-    }
-
-
-    /**
-     * Sets the comment value for this Comment.
-     * 
-     * @param comment
-     */
-    public void setComment(java.lang.String comment) {
-        this.comment = comment;
-    }
-
-
-    /**
-     * Gets the createdAt value for this Comment.
+     * Gets the createdAt value for this City.
      * 
      * @return createdAt
      */
@@ -82,7 +54,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Sets the createdAt value for this Comment.
+     * Sets the createdAt value for this City.
      * 
      * @param createdAt
      */
@@ -92,7 +64,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Gets the deletedAt value for this Comment.
+     * Gets the deletedAt value for this City.
      * 
      * @return deletedAt
      */
@@ -102,7 +74,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Sets the deletedAt value for this Comment.
+     * Sets the deletedAt value for this City.
      * 
      * @param deletedAt
      */
@@ -112,7 +84,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Gets the id value for this Comment.
+     * Gets the id value for this City.
      * 
      * @return id
      */
@@ -122,7 +94,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Sets the id value for this Comment.
+     * Sets the id value for this City.
      * 
      * @param id
      */
@@ -132,67 +104,55 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Gets the member value for this Comment.
+     * Gets the name value for this City.
      * 
-     * @return member
+     * @return name
      */
-    public service11.Member getMember() {
-        return member;
+    public java.lang.String getName() {
+        return name;
     }
 
 
     /**
-     * Sets the member value for this Comment.
+     * Sets the name value for this City.
      * 
-     * @param member
+     * @param name
      */
-    public void setMember(service11.Member member) {
-        this.member = member;
+    public void setName(java.lang.String name) {
+        this.name = name;
     }
 
 
     /**
-     * Gets the pid value for this Comment.
+     * Gets the places value for this City.
      * 
-     * @return pid
+     * @return places
      */
-    public long getPid() {
-        return pid;
+    public service12.Place[] getPlaces() {
+        return places;
     }
 
 
     /**
-     * Sets the pid value for this Comment.
+     * Sets the places value for this City.
      * 
-     * @param pid
+     * @param places
      */
-    public void setPid(long pid) {
-        this.pid = pid;
+    public void setPlaces(service12.Place[] places) {
+        this.places = places;
+    }
+
+    public service12.Place getPlaces(int i) {
+        return this.places[i];
+    }
+
+    public void setPlaces(int i, service12.Place _value) {
+        this.places[i] = _value;
     }
 
 
     /**
-     * Gets the place value for this Comment.
-     * 
-     * @return place
-     */
-    public service11.Place getPlace() {
-        return place;
-    }
-
-
-    /**
-     * Sets the place value for this Comment.
-     * 
-     * @param place
-     */
-    public void setPlace(service11.Place place) {
-        this.place = place;
-    }
-
-
-    /**
-     * Gets the status value for this Comment.
+     * Gets the status value for this City.
      * 
      * @return status
      */
@@ -202,7 +162,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Sets the status value for this Comment.
+     * Sets the status value for this City.
      * 
      * @param status
      */
@@ -212,7 +172,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Gets the updatedAt value for this Comment.
+     * Gets the updatedAt value for this City.
      * 
      * @return updatedAt
      */
@@ -222,7 +182,7 @@ public class Comment  implements java.io.Serializable {
 
 
     /**
-     * Sets the updatedAt value for this Comment.
+     * Sets the updatedAt value for this City.
      * 
      * @param updatedAt
      */
@@ -232,8 +192,8 @@ public class Comment  implements java.io.Serializable {
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Comment)) return false;
-        Comment other = (Comment) obj;
+        if (!(obj instanceof City)) return false;
+        City other = (City) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -242,19 +202,15 @@ public class Comment  implements java.io.Serializable {
         __equalsCalc = obj;
         boolean _equals;
         _equals = true && 
-            ((this.comment==null && other.getComment()==null) || 
-             (this.comment!=null &&
-              this.comment.equals(other.getComment()))) &&
             this.createdAt == other.getCreatedAt() &&
             this.deletedAt == other.getDeletedAt() &&
             this.id == other.getId() &&
-            ((this.member==null && other.getMember()==null) || 
-             (this.member!=null &&
-              this.member.equals(other.getMember()))) &&
-            this.pid == other.getPid() &&
-            ((this.place==null && other.getPlace()==null) || 
-             (this.place!=null &&
-              this.place.equals(other.getPlace()))) &&
+            ((this.name==null && other.getName()==null) || 
+             (this.name!=null &&
+              this.name.equals(other.getName()))) &&
+            ((this.places==null && other.getPlaces()==null) || 
+             (this.places!=null &&
+              java.util.Arrays.equals(this.places, other.getPlaces()))) &&
             this.status == other.getStatus() &&
             this.updatedAt == other.getUpdatedAt();
         __equalsCalc = null;
@@ -268,18 +224,22 @@ public class Comment  implements java.io.Serializable {
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
-        if (getComment() != null) {
-            _hashCode += getComment().hashCode();
-        }
         _hashCode += new Long(getCreatedAt()).hashCode();
         _hashCode += new Long(getDeletedAt()).hashCode();
         _hashCode += new Long(getId()).hashCode();
-        if (getMember() != null) {
-            _hashCode += getMember().hashCode();
+        if (getName() != null) {
+            _hashCode += getName().hashCode();
         }
-        _hashCode += new Long(getPid()).hashCode();
-        if (getPlace() != null) {
-            _hashCode += getPlace().hashCode();
+        if (getPlaces() != null) {
+            for (int i=0;
+                 i<java.lang.reflect.Array.getLength(getPlaces());
+                 i++) {
+                java.lang.Object obj = java.lang.reflect.Array.get(getPlaces(), i);
+                if (obj != null &&
+                    !obj.getClass().isArray()) {
+                    _hashCode += obj.hashCode();
+                }
+            }
         }
         _hashCode += getStatus();
         _hashCode += new Long(getUpdatedAt()).hashCode();
@@ -289,18 +249,11 @@ public class Comment  implements java.io.Serializable {
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Comment.class, true);
+        new org.apache.axis.description.TypeDesc(City.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "comment"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://example/", "city"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("comment");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "comment"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("createdAt");
         elemField.setXmlName(new javax.xml.namespace.QName("", "createdAt"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
@@ -319,24 +272,19 @@ public class Comment  implements java.io.Serializable {
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("member");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "member"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://example/", "member"));
+        elemField.setFieldName("name");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "name"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("pid");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "pid"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "long"));
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("place");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "place"));
+        elemField.setFieldName("places");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "places"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://example/", "place"));
         elemField.setMinOccurs(0);
-        elemField.setNillable(false);
+        elemField.setNillable(true);
+        elemField.setMaxOccursUnbounded(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("status");

@@ -5,19 +5,19 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package service11;
+package service12;
 
 public class CommentDto  implements java.io.Serializable {
-    private service11.Comment comment;
+    private service12.Comment comment;
 
-    private service11.Rating rating;
+    private service12.Rating rating;
 
     public CommentDto() {
     }
 
     public CommentDto(
-           service11.Comment comment,
-           service11.Rating rating) {
+           service12.Comment comment,
+           service12.Rating rating) {
            this.comment = comment;
            this.rating = rating;
     }
@@ -28,7 +28,7 @@ public class CommentDto  implements java.io.Serializable {
      * 
      * @return comment
      */
-    public service11.Comment getComment() {
+    public service12.Comment getComment() {
         return comment;
     }
 
@@ -38,7 +38,7 @@ public class CommentDto  implements java.io.Serializable {
      * 
      * @param comment
      */
-    public void setComment(service11.Comment comment) {
+    public void setComment(service12.Comment comment) {
         this.comment = comment;
     }
 
@@ -48,7 +48,7 @@ public class CommentDto  implements java.io.Serializable {
      * 
      * @return rating
      */
-    public service11.Rating getRating() {
+    public service12.Rating getRating() {
         return rating;
     }
 
@@ -58,7 +58,7 @@ public class CommentDto  implements java.io.Serializable {
      * 
      * @param rating
      */
-    public void setRating(service11.Rating rating) {
+    public void setRating(service12.Rating rating) {
         this.rating = rating;
     }
 
